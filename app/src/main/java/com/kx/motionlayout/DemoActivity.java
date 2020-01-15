@@ -18,6 +18,9 @@ public class DemoActivity extends AppCompatActivity {
     public void motion1(View view) {
         start(MotionActivity.class);
     }
+    public void motion2(View view) {
+        start(Motion2Activity.class);
+    }
 
     public void basketBall(View view) {
         start(BasketBallActivity.class);
