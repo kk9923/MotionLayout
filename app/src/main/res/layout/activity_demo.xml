@@ -35,5 +35,29 @@
         android:layout_width="match_parent"
         android:layout_height="45dp" />
 
+    <Button
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="LoadingView Start"
+        android:onClick="start"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <Button
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="LoadingView Stop"
+        android:onClick="stop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <com.kx.motionlayout.LoadingView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
 
 </LinearLayout>

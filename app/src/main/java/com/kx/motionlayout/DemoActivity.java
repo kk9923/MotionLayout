@@ -9,10 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DemoActivity extends AppCompatActivity {
 
+    private LoadingView mLoadingView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo);
+        mLoadingView = findViewById(R.id.progress);
     }
 
     public void motion1(View view) {
@@ -28,5 +31,12 @@ public class DemoActivity extends AppCompatActivity {
 
     private void start(Class<? extends Activity> aClass){
         startActivity(new Intent(this,aClass));
+    }
+
+    public void start(View view) {
+        mLoadingView.start();//开始动画
+    }
+    public void stop(View view) {
+        mLoadingView.stop();
     }
 }
